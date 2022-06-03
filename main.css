@@ -50,13 +50,14 @@ nav ul .header__container--buttons {
 .header__container--logo li img {
   width: 100px;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 .header__container--buttons li:nth-child(1) select,
 .header__container--buttons li:nth-child(2) button {
   margin-right: 10px;
   padding: 5px;
-
+  cursor: pointer;
 }
 
 .header__container--buttons li:nth-child(1) select {
@@ -93,7 +94,8 @@ header .header__container--texts p:nth-child(3) {
   font-size: 18px;
 }
 
-header .header__container--input {
+header .header__container--input, 
+main .main__container--input {
   display: flex;
   flex-direction: column;
   max-width: 270px;
@@ -101,12 +103,14 @@ header .header__container--input {
   
 }
 
-header .header__container--input input {
+header .header__container--input input,
+main .main__container--input input {
   padding: 15px 10px;
   margin-bottom: 10px;
 }
 
-header .header__container--input button {
+header .header__container--input button,
+main .main__container--input button {
   display: inline-block;
   min-width: 80px;
   margin: 0 auto;
@@ -116,12 +120,14 @@ header .header__container--input button {
   color: white;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 
 main section {
   border-bottom: 10px solid var(--borders);
   text-align: center;
+  display: inline-block;
 }
 
 section .texts__main h2{
@@ -134,6 +140,78 @@ section .imgs__main img {
   min-width: 300px;
   width: 300px;
   max-width: 600px  ;
-  margin: 10px 0px 30px;
+  margin: 10px 2 30px;
 }
 
+
+main .main__section--number5 .container__questions{
+  margin-top: 25px;
+}
+
+.main__section--number5 .container__questions h2 {
+  margin-bottom: 30px;
+}
+
+.main__section--number5 .container__questions .questions {
+  display: flex;
+  justify-content: space-between;
+  background-color: #303030;
+  min-width: 320px;
+  max-width: 427px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 17px;
+}
+
+.main__section--recommendation {
+  margin-top: 35px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.main__section--recommendation p {
+  margin-bottom: 20px;
+}
+
+footer {
+  padding-left: 20px;
+}
+
+footer p {
+  margin: 40px 0px;
+  color: #757575
+}
+
+footer .footer__container--references {
+  display: flex;
+  font-size: 13px
+}
+
+.footer__container--references ul li {
+  margin-bottom: 10px;
+  color: #757575
+}
+
+footer .footer__container--references ul:nth-child(2) {
+  margin-left: 20px;
+}
+
+footer .footer__container--language {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+footer .footer__container--language select {
+  background-color: black;
+  color: white;
+  width: 120px;
+  padding: 15px;
+}
+
+footer .footer__container--language span {
+  font-size: 13px;
+  color: #757575;
+  margin: 20px 0px 60px;
+}

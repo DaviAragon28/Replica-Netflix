@@ -1,5 +1,6 @@
 :root {
-  --red: #e50914
+  --red: #e50914;
+  --borders: #222222;
 }
 
 * {
@@ -13,6 +14,8 @@ body {
   max-width: 425px;
   min-width: 320px;
   margin: 0 auto;
+  background-color: black;
+  color: white;
 }
 
 header {
@@ -22,6 +25,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  border-bottom: 10px solid var(--borders);
 }
 
 
@@ -59,6 +63,10 @@ nav ul .header__container--buttons {
   background-color: black;
   color: white;
 }
+.header__container--buttons li:nth-child(1) select option{
+  background-color: gray;
+
+} 
 
 .header__container--buttons li:nth-child(2) button {
   background-color: var(--red);
@@ -109,3 +117,23 @@ header .header__container--input button {
   border: none;
   border-radius: 3px;
 }
+
+
+main section {
+  border-bottom: 10px solid var(--borders);
+  text-align: center;
+}
+
+section .texts__main h2{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+section .imgs__main img {
+  min-height: 250px;
+  min-width: 300px;
+  width: 300px;
+  max-width: 600px  ;
+  margin: 10px 0px 30px;
+}
+

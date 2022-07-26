@@ -5,162 +5,163 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./main.css">
-  <link rel="shortcut icon" href="./nextt.png">
-  <title>Netflix Colombia: Ve series online, ve películas online</title>
+  <script src="https://kit.fontawesome.com/15b0387e0a.js" crossorigin="anonymous"></script>
+  <title>Netflix Colombia, Ve series online, ve peliculas online</title>
 </head>
 <body>
+  <!--Header-->
   <header>
-    <nav>
-      <ul>
-        <div class="header__container--logo">
-          <li>
-            <img src="./logo-Netflix.jpg" alt="" >
-          </li>
-        </div>
-        <div class="header__container--buttons">
-          <li>
-            <select name="" id="">
-              <option value="">
-                Español
-              </option>
-              <option value="">
-                English
-              </option>
-            </select>
-          </li>
-          <li>
-            <button>Iniciar sesión</button>
-          </li>
-        </div>
-      </ul>
+    <nav class="container--navigator">
+      <div class="navigator--img">
+        <img  src="https://i.postimg.cc/637FTT7V/580b57fcd9996e24bc43c529.png" alt="">
+      </div>
+      <div class="navigator--buttons"> 
+        <select class="button--options">
+          <i class="fa-solid fa-globe"></i>
+          <option value="">Español</option>
+          <option>English</option>
+        </select>
+        <button class="button--start">Iniciar sesión</button>
+      </div>
     </nav>
-    <section class="header__container--texts">
-      <h1>películas y series ilimitadas y mucho más.</h1>
-      <p>Disfruta donde quieras. Cancela cuando quieras.</p>
-      <p>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
-    </section>
-    <section class="header__container--input">
-      <input type="text" id="" placeholder="Email">
-      <button>
-        Comenzar 
-      </button>
-    </section>
+    <div class="container--text">
+      <h1>Películas y series ilimitadas y mucho más.</h1>
+      <h2 id="subtitle--header">Disfruta donde quieras. Cancela cuando quieras.</h2>
+      <form action="">
+        <h3>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h3>
+        <div class="container__input--header">
+        <input type="text" placeholder="Email">
+        <button>Comenzar<i class="fa-solid fa-angle-right"></i></button>
+        </div>
+      </form>
+    </div>
   </header>
+  <!--End Header-->
+
+  <!--Main-->
   <main>
-    <section class="main__section--number1">
-      <div class="texts__main container__texts--number1">
-        <h2>Disfruta en tu TV</h2>
-        <p>Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</p>
-      </div>
-      <div class="imgs__main container__imgs--number1">
-        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
-      </div>
-    </section> 
-    <section class="main__section--number2">
-      <div class="texts__main container__texts--number2">
-        <h2>Descarga tus series para verlas offline.</h2>
-        <p>Guarda tu contenido favorito y tendrás siempre algo para ver.</p>
-      </div>
-      <div class="imgs__main container__imgs--number2">
-        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
-      </div>
-    </section> 
-    <section class="main__section--number3">
-      <div class="texts__main container__texts--number3">
-        <h2>Disfruta donde quieras.</h2>
-        <p>Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo extra.</p>
-      </div>
-      <div class="imgs__main container__imgs--number3">
-        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="">
-      </div>
-    </section> 
-    <section class="main__section--number4">
-      <div class="texts__main container__texts--number4">
-        <h2>Crea perfiles para niños.</h2>
-        <p>Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.</p>
-      </div>
-      <div class="imgs__main container__imgs--number4">
-        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/kidsValueProp.png" alt="">
-      </div>
-    </section>
-    <section class="main__section--number5">
-      <div class="container__questions">
-        <h2>Preguntas frecuentes</h2>
-        <div class="questions">
-          <p>¿Qué es Netflix?</p>
-          <i class="fa-solid fa-plus"></i>
-        </div>
-        <div class="questions">
-          <p>¿Cuánto cuesta Netflix?</p>
-          <i class="fa-solid fa-plus"></i>
-        </div>
-        <div class="questions">
-          <p>¿Dónde puedo ver Netflix?</p>
-          <i class="fa-solid fa-plus"></i>
-        </div>
-        <div class="questions">
-          <p>¿Cómo cancelo?</p>
-          <i class="fa-solid fa-plus"></i>
-        </div>
-        <div class="questions">
-          <p>¿Qué puedo ver en Netflix?</p>
-          <i class="fa-solid fa-plus"></i>
-        </div>
-        <div class="questions">
-          <p>¿Es bueno Netflix para los niños?</p>
-          <i class="fa-solid fa-plus"></i>
-        </div>
-        <section class="main__section--recommendation">
-          <div>
-            <p>
-              ¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.
-            </p>
+    <div class="container__sections--main">
+      <section class="section__main--number1">
+        <div id="info" class="container--info">
+          <div class="container--text">
+            <h1>Disfruta en tu TV.</h1>
+            <h2>Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</h2>
           </div>
-          <div class="main__container--input">
-            <input type="text" class="" placeholder="Email">
-            <button>Comenzar</button>
+          <div class="container--img">
+            <img  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
           </div>
-        </section>
-      </div>
-    </section>
+        </div>
+      </section>
+      <section class="section__main--number2">
+        <div class="container--info">
+          <div class="container--text">
+            <h1>Descarga tus series para verlas offline.</h1>
+            <h2>Guarda tu contenido favorito y tendrás siempre algo para ver.</h2>
+          </div>
+          <div class="container--img">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
+          </div>
+      </section>
+      <section class="section__main--number3">
+        <div class="container--info">
+          <div class="container--text">
+            <h1>Disfruta donde quieras.</h1>
+            <h2>Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo extra.</h2>
+          </div>
+          <div class="container--img">
+            <img width="300" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="">
+          </div>
+      </section>
+      <section class="section__main--number4">
+        <div class="container--info">
+          <div class="container--text">
+            <h1>Crea perfiles para niños.</h1>
+            <h2>Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.</h2>
+          </div>
+          <div class="container--img">
+            <img width="300" src="https://occ-0-1472-3933.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABWhA7S8gKgO2_QQSYRTfuHJsMzqlrD0dFYILnwCBe0hjblWT1cNH7K1cDnOR_6ogaNeR404obloJ4HjEw-V-7ngs_k7W1kNNv89C.png?r=8ec" alt="">
+          </div>
+      </section>
+      <section class="section__main--number5">
+        <div class="container--info">
+          <h1>Preguntas frecuentes</h1>
+          <div class="container--questions">
+            <div>
+              <span>¿Qué es Netflix?</span>
+              <i class="fa-thin fa-plus"></i>
+            </div>
+            <div>
+              <span>¿Cuánto cuesta Netflix?</span>
+              <i class="fa-thin fa-plus"></i>
+            </div>
+            <div>
+              <span>¿Dónde puedo ver Netflix?</span>
+              <i class="fa-thin fa-plus"></i>
+            </div>
+            <div>
+            <span>¿Cómo cancelo?</span>
+            <i class="fa-thin fa-plus"></i>
+            </div>
+            <div>
+              <span>¿Qué puedo ver en Netflix?</span>
+              <i class="fa-thin fa-plus"></i>
+            </div>
+            <div>
+              <span>¿Es bueno Netflix para los niños?</span>
+              <i class="fa-thin fa-plus"></i>
+            </div>
+          </div>
+          <form>
+            <h3>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h3>
+            <div class="container__input--section5">
+              <input type="text" placeholder="Email">
+              <button>Comenzar<i class="fa-solid fa-angle-right"></i></button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
   </main>
-  <footer>
-    <p>¿Preguntas? Llama al 01 800 917 1564</p>
-    <div class="footer__container--references">
+  <!--End Main-->
+
+  <!--Footer-->
+  <footer class="footer">
+    <div class="footer--title">
+      <p>¿Preguntas? Llama al <a href="">01 800 917 1564</a></p>
+    </div>
+    <div class="footer--questions">
       <ul>
-        <li>Preguntas frecuentes</li>
-        <li>Cuenta</li>
-        <li>Relaciones con inversionistas</li>
-        <li>Canjear tarjetas de regalo</li>
-        <li>Formas de ver</li>
-        <li>Privacidad</li>
-        <li>Información corporativa</li>
-        <li>Prueba de velocidad</li>
-        <li>Solo en Netflix</li>
+        <li><a href="">Preguntas frecuentas</a></li>
+        <li><a href="">Relaciones con inversionistas</a></li>
+        <li><a href="">Formas de ver</a></li>
+        <li><a href="">Información coporativa</a></li>
+        <li><a href="">Solo en Netflix</a></li>
       </ul>
       <ul>
-        <li>Centro de ayuda</li>
-        <li>Prensa</li>
-        <li>Empleo</li>
-        <li>Comprar</li>
-        <li>Términos de uso</li>
-        <li>Preferencias de cookies</li>
-        <li>Contáctanos</li>
-        <li>Avisos legales</li>
+        <li><a href="">Centro de ayuda</a></li>
+        <li><a href="">Empleo</a></li>
+        <li><a href="">Términos de uso</a></li>
+        <li><a href="">Contáctanos</a></li>
+      </ul>
+      <ul>
+        <li><a href="">Cuenta</a></li>
+        <li><a href="">Canjear tarjetas de regalo</a></li>
+        <li><a href="">Privacidad</a></li>
+        <li><a href="">Prueba de velocidad</a></li>
+      </ul>
+      <ul>
+        <li><a href="">Prensa</a></li>
+        <li><a href="">Comprar tarjetas de regalo</a></li>
+        <li><a href="">Preferencias de cookies</a></li>
+        <li><a href="">Avisos legales</a></li>
       </ul>
     </div>
-    <div class="footer__container--language">
-      <select name="" id="">
-        <option value="">
-          Español
-        </option>
-        <option value="">
-          English
-        </option>
-      </select>
-      <span>Netflix Colombia</span>
-    </div>
+    <select class="footer--button">
+      <option>Español</option>
+      <option>English</option>
+    </select>
+    <p class="footer-location">Netflix Colombia</p>
   </footer>
-  <script src="https://kit.fontawesome.com/15b0387e0a.js" crossorigin="anonymous"></script>
+  <!--End Footer-->
 </body>
 </html>
